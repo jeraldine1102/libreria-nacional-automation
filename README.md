@@ -23,11 +23,11 @@ sitio web de [Librería Nacional](https://www.librerianacional.com), usando **Se
 
 ## 🧪 Funcionalidades automatizadas
 
-✅ Login con credenciales válidas  
-✅ Búsqueda de libros aleatorios  
-✅ Agregar libros al carrito  
-✅ Validación del mensaje de confirmación  
-✅ Verificación del producto en el carrito
+- ✅ Login con credenciales válidas  
+- ✅ Búsqueda de libros aleatorios  
+- ✅ Agregar libros al carrito  
+- ✅ Validación del mensaje de confirmación  
+- ✅ Verificación del producto en el carrito
 ---
 
 ## ⚙️ ¿Cómo ejecutar las pruebas?
