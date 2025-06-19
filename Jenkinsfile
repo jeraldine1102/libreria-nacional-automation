@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/jeraldine1102/libreria-nacional-automation.git'
+                git branch: 'main', url: 'https://github.com/jeraldine1102/libreria-nacional-automation.git'
             }
         }
 
