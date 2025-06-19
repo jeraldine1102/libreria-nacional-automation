@@ -40,8 +40,9 @@ withSonarQubeEnv('SonarQube') {
         }
     }
 
-    post {
-        always {
+post {
+    always {
+        node {
             junit '**/target/surefire-reports/*.xml'
         }
     }
