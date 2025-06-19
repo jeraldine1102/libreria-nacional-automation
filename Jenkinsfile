@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        SONAR_TOKEN = credentials('SONAR_TOKEN') // reemplaza con el ID real
+        SONAR_TOKEN = credentials('SONAR_TOKEN')
     }
 
     stages {
@@ -25,8 +25,8 @@ pipeline {
 
         stage('Sonar Analysis') {
             steps {
-withSonarQubeEnv('SonarQube') {
-    sh "mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN"
+                withSonarQubeEnv('SonarQube') {
+                    sh "mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN"
                 }
             }
         }
@@ -40,10 +40,11 @@ withSonarQubeEnv('SonarQube') {
         }
     }
 
-post {
-    always {
-        node {
-            junit '**/target/surefire-reports/*.xml'
+    post {
+        always {
+            node {
+                junit '**/target/surefire-reports/*.xml'
+            }
         }
     }
 }
